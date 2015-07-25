@@ -15,8 +15,8 @@
 		onScrollParallax: function(){
 			this.toTop = window.pageYOffset;
 			var btn = document.getElementById('more');
-			btn.style.bottom = -(this.toTop/btn.clientHeight) * 2;
-			this.content.style.top = this.header.clientHeight/2 - this.content.clientHeight/2 +  - Math.pow(this.toTop, 2)/1000;
+			btn.style.bottom = -(this.toTop/btn.clientHeight) * 2 + 'px';
+			this.content.style.top = this.header.clientHeight/2 - this.content.clientHeight/2 +  - Math.pow(this.toTop, 2)/1000 + 'px';
 			this.content.style.opacity = 1 - (this.toTop/header.clientHeight);
 		},
 		parallax: function(header, content){
