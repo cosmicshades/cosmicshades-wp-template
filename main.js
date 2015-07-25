@@ -16,8 +16,8 @@
 			this.toTop = window.pageYOffset;
 			var btn = document.getElementById('more');
 			btn.style.bottom = -(this.toTop/btn.clientHeight) * 2;
-			content.style.top = this.header.clientHeight/2 - this.content.clientHeight/2 +  - Math.pow(this.toTop, 2)/1000;
-			content.style.opacity = 1 - (this.toTop/header.clientHeight);
+			this.content.style.top = this.header.clientHeight/2 - this.content.clientHeight/2 +  - Math.pow(this.toTop, 2)/1000;
+			this.content.style.opacity = 1 - (this.toTop/header.clientHeight);
 		},
 		parallax: function(header, content){
 			window.addEventListener('scroll', this.onScrollParallax.bind(this));
