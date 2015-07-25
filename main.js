@@ -51,6 +51,6 @@
 		// 	this.nav.style.marginBottom = -this.nav.clientHeight;
 		// 	window.addEventListener('scroll', this.onScrollSticky.bind(this));
 		// },
-	}
+	};
 	app.init();
 })();
