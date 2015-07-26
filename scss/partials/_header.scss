@@ -3,9 +3,10 @@ header{
 	text-align: center;
 	color: $primary-color-text;
 	background: linear-gradient(270deg, #673ab7, #6261c7);
-	background-size: 400% 400%;
+	// background-size: 400% 400%;
 	height: 100vh;
 	box-shadow: inset 0 0 33px rgba(0,0,0,0.3);
+	background-blend-mode: lighten;
 	background: 
 		linear-gradient(
 		  rgba(76,49,115,0.5), 

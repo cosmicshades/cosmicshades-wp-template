@@ -46,9 +46,9 @@ header {
   color: #FFFFFF;
   background: -webkit-linear-gradient(180deg, #673ab7, #6261c7);
   background: linear-gradient(270deg, #673ab7, #6261c7);
-  background-size: 400% 400%;
   height: 100vh;
   box-shadow: inset 0 0 33px rgba(0, 0, 0, 0.3);
+  background-blend-mode: lighten;
   background: -webkit-linear-gradient(rgba(76, 49, 115, 0.5), rgba(76, 49, 115, 0.5)), url("../img/bg.jpg");
   background: linear-gradient(rgba(76, 49, 115, 0.5), rgba(76, 49, 115, 0.5)), url("../img/bg.jpg");
   background-position: center 0px;
@@ -116,6 +116,9 @@ body {
   font-smoothing: antialiased;
   background-color: #EBEBEB; }
 
+#page-wrapper {
+  overflow: hidden; }
+
 .pure-g [class*="pure-u"] {
   /* Set your content font stack here: */
   font-family: 'Open Sans'; }
@@ -132,42 +135,62 @@ hr.half-rule {
   width: 100%;
   margin: 0 auto; }
 
-nav {
-  text-align: right;
+#sticky {
+  text-align: left;
   position: relative;
   z-index: 1000;
   box-shadow: 0 0px 0px rgba(128, 128, 128, 0);
-  -webkit-transition: all 0.5s;
-          transition: all 0.5s;
-  padding: 15px 0 0;
+  padding: 15px;
   width: 100%; }
-  nav a {
-    color: #ffffff;
+  #sticky a {
+    color: #727272;
     display: inline-block;
-    padding: 15px;
+    padding: 10px 15px;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 100;
     border-radius: 4px;
     -webkit-transition: all 0.2s;
             transition: all 0.2s;
-    opacity: 0.7; }
-    nav a:hover {
+    opacity: 0.7;
+    font-size: 2rem; }
+    #sticky a:hover {
       color: #009688;
       background-color: rgba(0, 0, 0, 0.05); }
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0; }
-  nav li {
-    display: inline;
-    padding-left: 20px; }
-  nav.sticky {
-    box-shadow: 0 5px 15px rgba(131, 131, 131, 0.3);
-    background-color: #ffffff;
+  #sticky.sticky {
+    background-color: transparent;
     position: fixed;
     width: 100%;
     top: 0; }
+
+.push {
+  position: relative; }
+
+nav {
+  background-color: #212121;
+  height: 100vh;
+  z-index: 1000;
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.6); }
+  nav ul {
+    text-align: right;
+    list-style-type: none;
+    margin: 0; }
+    nav ul li:not(:first-child) {
+      border-top: 1px solid rgba(252, 252, 252, 0.2); }
+      nav ul li:not(:first-child):hover {
+        background-color: rgba(252, 252, 252, 0.1); }
+    nav ul li a {
+      color: white;
+      width: 100%;
+      text-decoration: none;
+      display: inline-block;
+      padding: 20px;
+      text-transform: uppercase; }
+      nav ul li a.brand {
+        text-transform: inherit;
+        font-family: 'Megrim';
+        padding: 30px 20px;
+        font-size: 2rem; }
 
 section {
   position: relative;

@@ -16,16 +16,18 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<nav id="menu" class="panel" role="navigation">
+    <ul>
+        <li><a class='brand' href="#">CosmicShades</a></li>
+        <li><a href="#">Full Gallery</a></li>
+        <li><a href="#">Tutorials</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+<div id="page-wrapper">
+<div class="push">
+	
 	<header id='header'>
-		<!-- <nav id='sticky'>
-			<div class="container">
-				<ul>
-					<li><a href="">About</a></li>
-					<li><a href="">Team</a></li>
-					<li><a href="">Work</a></li>
-				</ul>
-			</div>
-		</nav> -->
 		<div id="content">
 			<h1>CosmicShades</h1>
 			<p>WordPress and Front-End development studio</p>
@@ -34,6 +36,9 @@
 		</div>
 		<button id="more"><i class="fa fa-angle-double-down"></i></button>
 	</header>
+	<div id="sticky">
+		<a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+	</div>
 	<div id="wrap">
 		<div id="featureOne">
 			<section>
@@ -81,7 +86,7 @@
 										<a href=""><i class="fa fa-twitter"></i></a>
 										<a href=""><i class="fa fa-github"></i></a>
 										<a href=""><i class="fa fa-linkedin"></i></a>
-										<a href=""><i class="fa fa-link"></i></a>
+										<a href=""><i class="fa fa-globe"></i></a>
 									</div>		
 								</div>
 							</div>
@@ -98,7 +103,7 @@
 										<a href=""><i class="fa fa-twitter"></i></a>
 										<a href=""><i class="fa fa-github"></i></a>
 										<a href=""><i class="fa fa-linkedin"></i></a>
-										<a href=""><i class="fa fa-link"></i></a>
+										<a href=""><i class="fa fa-globe"></i></a>
 									</div>
 									
 								</div>
@@ -160,8 +165,16 @@
 			&copy;2015 CosmicShades
 		</div>
 	</footer>
+</div>
+</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src='js/bigSlide.js'></script>
 	<script src='main.js'></script>
+	<script>
+	    $(document).ready(function() {
+	        $('.menu-link').bigSlide();
+	    });
+	</script>
 </body>
 </html>

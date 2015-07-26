@@ -1,43 +1,70 @@
-nav{
-	// background-color: $background-color;
-	// border-top: 1px solid $primary-color;
-	text-align: right;
+#sticky{
+	text-align: left;
 	position: relative;
 	z-index: 1000;
 	box-shadow: 0 0px 0px rgba(128,128,128,0.0);
-	transition: all 0.5s;
-	padding: 15px 0 0;
+	// transition: all 0.5s;
+	padding: 15px;
 	width: 100%;
 	a{
-		color: #ffffff;
+		color: $secondary-text-color;
 		display: inline-block;
-		padding: 15px;
+		padding: 10px 15px;
 		text-decoration: none;
 		text-transform: uppercase;
 		font-weight: 100;
 		border-radius: 4px;
 		transition: all 0.2s;
 		opacity: 0.7;
+		font-size: 2rem;
 		&:hover{
 			color: $accent-color;
 			background-color: rgba(0,0,0,0.05);
 		}
 	}
-	ul{
-		list-style-type: none;
-		padding: 0;
-		margin: 0;
-	}
-	li{
-		display: inline;
-		padding-left: 20px;
-	}
 	&.sticky{
-		box-shadow: 0 5px 15px rgba(131,131,131,0.3);
-		background-color: #ffffff;
+		background-color: transparent;
 		position: fixed;
 		width: 100%;
 		top: 0;
 	}
+	
+}
+.push{
+	position: relative;
+}
+nav{
+	background-color: $primary-text-color;
+	height: 100vh;
+	z-index: 1000;
+	box-shadow: inset 0 0 30px rgba(0,0,0,0.6);
+	// background-color: $background-color;
+	// border-top: 1px solid $primary-color;
+	ul{
+		text-align: right;
+		list-style-type: none;
+		margin: 0;
+		li:not(:first-child){
+			border-top: 1px solid rgba(252,252,252,0.2);
+			&:hover{
+				background-color: rgba(252,252,252,0.1);
+			}
+		}
+		li a{
+			color: white;
+			width: 100%;
+			text-decoration: none;
+			display: inline-block;
+			padding: 20px;
+			text-transform: uppercase;
+			&.brand{
+				text-transform: inherit;
+				font-family: 'Megrim';
+				padding: 30px 20px;
+				font-size: 2rem;
+			}
+		}
+	}
+
 
 }

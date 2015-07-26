@@ -1,13 +1,14 @@
 (function(){
 	var app = {
-		//nav: document.getElementById('sticky'),
+		nav: document.getElementById('sticky'),
 		header: document.getElementById('header'),
 		content: document.getElementById('content'),
 		toTop: window.pageYOffset,
 		init: function(){
-			this.header.style.height = window.innerHeight;
+			this.nav.style.marginBottom = -this.nav.clientHeight;
+			this.header.style.height = window.innerHeight - this.nav.clientHeight + 'px';
 			this.content.style.top = this.header.clientHeight/2 - this.content.clientHeight/2 + 'px';
-			//this.sticky('sticky', 'header');
+			this.sticky('sticky', 'header');
 			this.parallax('header', 'content');
 			this.fadeUp();
 			this.scrollPage();
@@ -18,7 +19,7 @@
 			btn.style.bottom = -(this.toTop/btn.clientHeight) * 2 + 'px';
 			this.content.style.top = this.header.clientHeight/2 - this.content.clientHeight/2 +  - Math.pow(this.toTop, 2)/1000 + 'px';
 			this.content.style.opacity = 1 - (this.toTop/header.clientHeight);
-			this.header.style.backgroundPosition = 'center ' + this.toTop/3 + 'px';
+			//this.header.style.backgroundPosition = 'center ' + this.toTop/3 + 'px';
 		},
 		parallax: function(header, content){
 			window.addEventListener('scroll', this.onScrollParallax.bind(this));
@@ -42,17 +43,17 @@
 			        scrollTop: $("#wrap").offset().top
 			    }, 500, 'easeInOutCubic');
 			});
+		},
+		onScrollSticky: function(height,nav){
+			this.toTop = window.pageYOffset;
+			if(this.toTop >= header.clientHeight){
+				this.nav.className = 'sticky';
+			} else { this.nav.className = ''; }
+		},
+		sticky: function(id, header){
+			this.nav.style.marginBottom = -this.nav.clientHeight;
+			window.addEventListener('scroll', this.onScrollSticky.bind(this));
 		}
-		// onScrollSticky: function(height,nav){
-		// 	this.toTop = window.pageYOffset;
-		// 	if(this.toTop >= header.clientHeight){
-		// 		this.nav.className = 'sticky';
-		// 	} else { this.nav.className = ''; }
-		// },
-		// sticky: function(id, header){
-		// 	this.nav.style.marginBottom = -this.nav.clientHeight;
-		// 	window.addEventListener('scroll', this.onScrollSticky.bind(this));
-		// },
 	};
 	app.init();
 })();
