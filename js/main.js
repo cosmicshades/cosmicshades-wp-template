@@ -26,7 +26,7 @@
 				if (sections[i].offsetTop <= (this.toTop + window.innerHeight - 300)) {
 					sections[i].className = 'showing';
 					console.log(sections[i], sections[i].offsetTop )
-				}
+				} 
 			};
 			console.log(sections[0].offsetTop, window.pageYOffset + window.innerHeight - 300);
 		},
