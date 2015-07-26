@@ -15,7 +15,7 @@ body{
 } 
 #page-wrapper{
 	overflow: hidden;
-	
+
 }
 .pure-g [class *= "pure-u"] {
     /* Set your content font stack here: */
@@ -24,12 +24,12 @@ body{
 hr.half-rule{
 	border: 0;
     height: 0;
-    border-bottom: 4px solid rgba(133, 133, 133, 0.2);
-    width: 80px;
+    border-bottom: 4px solid rgba(133, 133, 133, 0.25);
+    width: 100px;
     margin: 15px auto;
 }
 .container{
-	max-width: 768px;
+	max-width: 1024px;
 	width: 100%;
 	margin: 0 auto;
 }

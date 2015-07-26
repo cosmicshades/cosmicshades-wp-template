@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>CosmicShades | WordPress, Web, &amp; Software Solutions</title>
-	<link href='http://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<!--[if lte IE 8]>
@@ -16,29 +16,28 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<nav id="menu" class="panel" role="navigation">
-    <ul>
-        <li><a class='brand' href="#">CosmicShades</a></li>
-        <li><a href="#">Full Gallery</a></li>
-        <li><a href="#">Tutorials</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
 <div id="page-wrapper">
 <div class="push">
 	
 	<header id='header'>
-		<div id="content">
-			<h1>CosmicShades</h1>
-			<p>WordPress and Front-End development studio</p>
-			<a href="">Our Works</a>
-			<a href="" class="about-us">About Us</a>
+		<div id="top-header">
+			<div id="content" class="container">
+				<span class="rotate">WordPress Themes, Ruby Gems, Node.js Modules</span>
+			</div>
 		</div>
-		<button id="more"><i class="fa fa-angle-double-down"></i></button>
+		<div id="bottom-header">
+			<div class="container">
+				<img src="img/cs.svg" alt="">
+				<h1>CosmicShades</h1>
+				<p>WordPress and Front-End development studio</p>
+<!-- 				<a href="">Our Works</a>
+				<a href="" class="about-us">About Us</a> -->
+				
+			</div>
+		</div>
+		<!-- <button id="more"><i class="fa fa-angle-double-down"></i></button> -->
 	</header>
-	<div id="sticky">
-		<a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
-	</div>
+		<div class="triangle purple"></div>
 	<div id="wrap">
 		<div id="featureOne">
 			<section>
@@ -112,20 +111,6 @@
 					</div>
 				</div>
 			</section>
-			
-		</div>
-		<div class="triangle gray"></div>
-		<div id="featureThree">
-			<section>
-				<div class="container about">
-					<div class="section-header">
-						<h2>Gallery</h2>
-						<hr class="half-rule">
-					</div>
-					<p>WordPress is one of the best supported content management systems with many plugins and themes to create a blog around.</p>
-					<p>CosmicShades seeks to provide high quality templates for use. Currently the team is comprised of John Sylvain and David Teter, and we are beginning our stages of production and development of themes.</p>
-				</div>
-			</section>
 		</div>
 	</div>
 	<div id="contact">
@@ -168,13 +153,7 @@
 </div>
 </div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-	<script src='js/bigSlide.js'></script>
-	<script src='main.js'></script>
-	<script>
-	    $(document).ready(function() {
-	        $('.menu-link').bigSlide();
-	    });
-	</script>
+	<script src='./js/jquery.simple-text-rotator.min.js'></script>
+	<script src='./js/main.js'></script>
 </body>
 </html>

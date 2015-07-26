@@ -38,8 +38,8 @@ section{
 	&.white{
 		border-color: #ffffff transparent transparent transparent;
 	}
-	&.gray{
-		border-color: $background-color transparent transparent transparent;
+	&.purple{
+		border-color: $primary-color transparent transparent transparent;
 	}
 }
 .about{
@@ -66,10 +66,10 @@ section{
 }
 
 .section-header{
-	font-size: 3rem;
+	font-size: 2.125rem;
 	text-align: center;
 	text-transform: uppercase;
-	font-family: 'Megrim';
+	font-family: 'Montserrat';
 	color: $secondary-text-color;
 }
 #team{
