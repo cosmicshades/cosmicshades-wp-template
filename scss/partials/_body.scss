@@ -3,7 +3,7 @@ section{
 	font-size: 14pt;
 	color: $primary-text-color;
 	margin: 130px 0;
-	transform: translateY(100px) scale(0.9);
+	transform: translateY(200px) scale(0.8);
 	opacity: 0;
 	transition: all 0.7s cubic-bezier(.17,.67,.52,.93);
 	&.showing{
@@ -70,6 +70,7 @@ section{
 			// letter-spacing: 2px;
 			color: $secondary-text-color;
 			font-size: 1.5rem;
+			font-weight: 600;
 		}
 		p.tag{
 			color: $accent-color;
@@ -95,5 +96,51 @@ section{
 			padding: 0 5px;
 		}
 
+	}
+}
+#contact{
+	background-color: $primary-color;
+	padding: 100px 0;
+	text-align: center;
+	color: white;
+	h2{
+		color: white;
+	}
+	hr{
+		border-bottom: 4px solid rgba(252, 252, 252, 0.4);
+	}
+	input,
+	textarea{
+		width: 100%;
+		background-color: $primary-color-dark;
+		padding: 20px;
+		border-radius: 4px;
+		outline: none;
+		border: none;
+		font-weight: 400;
+		transition: all 0.2s;
+		&:focus{
+			box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+		}
+	}
+	input[type='submit']{
+		background-color: $accent-color;
+		text-transform: uppercase;
+		font-size: 0.825rem;
+		position: relative;
+		top: 0px;
+		box-shadow: 0 6px 0 #00877a;
+		transition: all 0.1s;
+		&:hover{
+			top:3px;
+			box-shadow: 0 3px 0 #00877a;
+		}
+		&:focus{
+			top:6px;
+			box-shadow: 0 0px 0 #00877a;
+		}
+	}
+	.pad-col{
+		padding: 20px;
 	}
 }

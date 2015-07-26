@@ -49,29 +49,12 @@ header {
   background-size: 400% 400%;
   height: 100vh;
   box-shadow: inset 0 0 33px rgba(0, 0, 0, 0.3);
-  background: -webkit-linear-gradient(180deg, #8859cf, #673ab7, #4b8ecf);
-  background: linear-gradient(270deg, #8859cf, #673ab7, #4b8ecf);
-  background-size: 600% 600%;
+  background: -webkit-linear-gradient(rgba(76, 49, 115, 0.5), rgba(76, 49, 115, 0.5)), url("../img/bg.jpg");
+  background: linear-gradient(rgba(76, 49, 115, 0.5), rgba(76, 49, 115, 0.5)), url("../img/bg.jpg");
+  background-position: center 0px;
+  background-size: cover;
   position: relative;
-  -webkit-animation: AnimationName 30s ease infinite;
-  animation: AnimationName 30s ease infinite;
   overflow: hidden; }
-
-@-webkit-keyframes AnimationName {
-  0% {
-    background-position: 0% 50%; }
-  50% {
-    background-position: 100% 50%; }
-  100% {
-    background-position: 0% 50%; } }
-
-@keyframes AnimationName {
-  0% {
-    background-position: 0% 50%; }
-  50% {
-    background-position: 100% 50%; }
-  100% {
-    background-position: 0% 50%; } }
   header h1 {
     text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
     font-weight: 100;
@@ -82,7 +65,8 @@ header {
     text-transform: uppercase;
     font-size: 14pt;
     opacity: 0.8;
-    font-weight: 100; }
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased; }
   header #more {
     border: none;
     outline: none;
@@ -102,14 +86,31 @@ header {
     border-radius: 4px 4px 0 0; }
   header #content {
     position: relative; }
+    header #content a {
+      border: 1px solid white;
+      display: inline-block;
+      padding: 15px;
+      margin: 20px 5px;
+      min-width: 150px;
+      font-size: 0.75rem;
+      color: white;
+      border-radius: 50px;
+      text-transform: uppercase;
+      text-decoration: none;
+      opacity: 0.9; }
+      header #content a.about-us {
+        background-color: #c0392b;
+        border: none; }
 
 * {
   box-sizing: border-box;
-  font-smoothing: antialiased; }
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased; }
 
 html,
 body {
-  font-family: 'Nunito';
+  font-family: 'Open Sans';
+  font-weight: 400;
   margin: 0;
   padding: 0;
   font-smoothing: antialiased;
@@ -117,7 +118,7 @@ body {
 
 .pure-g [class*="pure-u"] {
   /* Set your content font stack here: */
-  font-family: 'Nunito'; }
+  font-family: 'Open Sans'; }
 
 hr.half-rule {
   border: 0;
@@ -177,9 +178,9 @@ section {
   font-size: 14pt;
   color: #212121;
   margin: 130px 0;
-  -webkit-transform: translateY(100px) scale(0.9);
-      -ms-transform: translateY(100px) scale(0.9);
-          transform: translateY(100px) scale(0.9);
+  -webkit-transform: translateY(200px) scale(0.8);
+      -ms-transform: translateY(200px) scale(0.8);
+          transform: translateY(200px) scale(0.8);
   opacity: 0;
   -webkit-transition: all 0.7s cubic-bezier(0.17, 0.67, 0.52, 0.93);
           transition: all 0.7s cubic-bezier(0.17, 0.67, 0.52, 0.93); }
@@ -239,7 +240,8 @@ section {
       text-align: center;
       text-transform: uppercase;
       color: #727272;
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      font-weight: 600; }
     #team .profile-team p.tag {
       color: #009688;
       text-align: center;
@@ -260,22 +262,48 @@ section {
       color: white;
       padding: 0 5px; }
 
-footer {
+#contact {
   background-color: #673AB7;
-  padding: 100px;
+  padding: 100px 0;
   text-align: center;
-  color: #673AB7; }
-  footer .footer {
-    background-color: #512DA8;
-    color: #673AB7;
-    max-width: 300px;
+  color: white; }
+  #contact h2 {
+    color: white; }
+  #contact hr {
+    border-bottom: 4px solid rgba(252, 252, 252, 0.4); }
+  #contact input,
+  #contact textarea {
     width: 100%;
-    padding: 30px;
+    background-color: #512DA8;
+    padding: 20px;
     border-radius: 4px;
-    margin: 0 auto;
-    box-shadow: inset 0 0 13px rgba(0, 0, 0, 0.2); }
+    outline: none;
+    border: none;
+    font-weight: 400;
+    -webkit-transition: all 0.2s;
+            transition: all 0.2s; }
+    #contact input:focus,
+    #contact textarea:focus {
+      box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2); }
+  #contact input[type='submit'] {
+    background-color: #009688;
+    text-transform: uppercase;
+    font-size: 0.825rem;
+    position: relative;
+    top: 0px;
+    box-shadow: 0 6px 0 #00877a;
+    -webkit-transition: all 0.1s;
+            transition: all 0.1s; }
+    #contact input[type='submit']:hover {
+      top: 3px;
+      box-shadow: 0 3px 0 #00877a; }
+    #contact input[type='submit']:focus {
+      top: 6px;
+      box-shadow: 0 0px 0 #00877a; }
+  #contact .pad-col {
+    padding: 20px; }
 
-.sub {
+footer {
   background-color: #212121;
   padding: 60px;
   color: white; }

@@ -6,28 +6,36 @@ header{
 	background-size: 400% 400%;
 	height: 100vh;
 	box-shadow: inset 0 0 33px rgba(0,0,0,0.3);
-	background: linear-gradient(270deg, #8859cf, #673ab7, #4b8ecf);
-	background-size: 600% 600%;
+	background: 
+		linear-gradient(
+		  rgba(76,49,115,0.5), 
+		  rgba(76,49,115,0.5)
+		)
+	   	,url('../img/bg.jpg');
+	// background-: #8859cf;
+	//background-size: 600% 600%;
+	background-position: center 0px;
+	background-size: cover;
 	position: relative;
-	-webkit-animation: AnimationName 30s ease infinite;
-	-moz-animation: AnimationName 30s ease infinite;
-	animation: AnimationName 30s ease infinite;
+	// -webkit-animation: AnimationName 30s ease infinite;
+	// -moz-animation: AnimationName 30s ease infinite;
+	// animation: AnimationName 30s ease infinite;
 	overflow: hidden;
-	@-webkit-keyframes AnimationName {
-	    0%{background-position:0% 50%}
-	    50%{background-position:100% 50%}
-	    100%{background-position:0% 50%}
-	}
-	@-moz-keyframes AnimationName {
-	    0%{background-position:0% 50%}
-	    50%{background-position:100% 50%}
-	    100%{background-position:0% 50%}
-	}
-	@keyframes AnimationName { 
-	    0%{background-position:0% 50%}
-	    50%{background-position:100% 50%}
-	    100%{background-position:0% 50%}
-	}
+	// @-webkit-keyframes AnimationName {
+	//     0%{background-position:0% 50%}
+	//     50%{background-position:100% 50%}
+	//     100%{background-position:0% 50%}
+	// }
+	// @-moz-keyframes AnimationName {
+	//     0%{background-position:0% 50%}
+	//     50%{background-position:100% 50%}
+	//     100%{background-position:0% 50%}
+	// }
+	// @keyframes AnimationName { 
+	//     0%{background-position:0% 50%}
+	//     50%{background-position:100% 50%}
+	//     100%{background-position:0% 50%}
+	// }
 	h1{
 		text-shadow: 3px 3px 0 rgba(0,0,0, 0.3);
 		font-weight: 100;
@@ -39,7 +47,8 @@ header{
 		text-transform: uppercase;
 		font-size: 14pt;
 		opacity: 0.8;
-		font-weight: 100;
+		font-weight: 400;
+		-webkit-font-smoothing: antialiased;
 	}
 	#more{
 		border: none;
@@ -59,5 +68,22 @@ header{
 	}
 	#content{
 		position: relative;
+		a{
+			border: 1px solid white;
+			display: inline-block;
+			padding: 15px;
+			margin: 20px 5px;
+			min-width: 150px;
+			font-size: 0.75rem;
+			color: white;
+			border-radius: 50px;
+			text-transform: uppercase;
+			text-decoration: none;
+			opacity: 0.9;
+			&.about-us{
+				background-color: #c0392b;
+				border: none;
+			}
+		}
 	}
 }

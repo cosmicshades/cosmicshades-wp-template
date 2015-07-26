@@ -1,11 +1,13 @@
 *{
 	box-sizing:border-box;
 	font-smoothing:antialiased;
+	-webkit-font-smoothing: antialiased;
 	
 }
 html,
 body{
-	font-family: 'Nunito';
+	font-family: 'Open Sans';
+	font-weight: 400;
 	margin: 0;
 	padding: 0;
 	font-smoothing:antialiased;
@@ -14,7 +16,7 @@ body{
 
 .pure-g [class *= "pure-u"] {
     /* Set your content font stack here: */
-    font-family: 'Nunito';
+    font-family: 'Open Sans';
 }
 hr.half-rule{
 	border: 0;
