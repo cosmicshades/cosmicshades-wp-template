@@ -28,6 +28,7 @@
 			for (var i = 0; i < sections.length; i++){
 				if (sections[i].offsetTop <= (this.toTop + window.innerHeight - 300)) {
 					sections[i].className = 'showing';
+					// console.log(sections[i], sections[i].offsetTop )
 				}
 			};
 		},

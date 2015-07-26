@@ -76,7 +76,7 @@ header {
     color: #727272;
     text-transform: uppercase;
     text-decoration: none;
-    background-color: #EBEBEB;
+    background-color: white;
     font-size: 1.5rem;
     position: absolute;
     bottom: 0;
@@ -132,10 +132,6 @@ hr.half-rule {
   width: 100%;
   margin: 0 auto; }
 
-#wrap {
-  padding: 0 15px;
-  padding-top: 50px; }
-
 nav {
   text-align: right;
   position: relative;
@@ -177,13 +173,12 @@ section {
   position: relative;
   font-size: 14pt;
   color: #212121;
-  margin: 130px 0;
   -webkit-transform: translateY(200px) scale(0.8);
       -ms-transform: translateY(200px) scale(0.8);
           transform: translateY(200px) scale(0.8);
   opacity: 0;
-  -webkit-transition: all 0.7s cubic-bezier(0.17, 0.67, 0.52, 0.93);
-          transition: all 0.7s cubic-bezier(0.17, 0.67, 0.52, 0.93); }
+  -webkit-transition: all 1s cubic-bezier(0.66, 0.18, 0.09, 0.97);
+          transition: all 1s cubic-bezier(0.66, 0.18, 0.09, 0.97); }
   section.showing {
     -webkit-transform: translateY(0px) scale(1);
         -ms-transform: translateY(0px) scale(1);
@@ -192,12 +187,62 @@ section {
   section p {
     opacity: 0.7; }
 
-.about {
-  margin-top: 100px;
-  max-width: 500px; }
-  .about p {
-    margin-bottom: 15px;
-    line-height: 145%; }
+#featureOne {
+  padding: 160px 0;
+  background-color: #fff; }
+
+#featureTwoInner {
+  position: relative;
+  padding: 160px 0; }
+
+#featureThree {
+  padding: 160px 0;
+  background-color: white; }
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 50px 0 50px;
+  position: relative;
+  margin-bottom: -30px;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%); }
+  .triangle.white {
+    border-color: #ffffff transparent transparent transparent; }
+  .triangle.gray {
+    border-color: #EBEBEB transparent transparent transparent; }
+
+.about p {
+  line-height: 145%; }
+
+.about .pad-top {
+  padding-top: 50px; }
+
+.about h3 {
+  font-size: 1.6rem;
+  padding-bottom: 10px; }
+
+.about img {
+  display: block;
+  margin: 0 auto; }
+
+.about .flex-center {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .section-header {
   font-size: 3rem;
@@ -207,8 +252,7 @@ section {
   color: #727272; }
 
 #team {
-  font-family: 'Nunito';
-  margin: 60px 0; }
+  font-family: 'Nunito'; }
   #team .pad-col:first-child {
     padding-right: 20px; }
   #team .pad-col:last-child {
