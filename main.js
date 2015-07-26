@@ -5,7 +5,7 @@
 		content: document.getElementById('content'),
 		toTop: window.pageYOffset,
 		init: function(){
-			this.nav.style.marginBottom = -this.nav.clientHeight;
+			this.nav.style.marginBottom = -this.nav.clientHeight + 'px';
 			this.header.style.height = window.innerHeight - this.nav.clientHeight + 'px';
 			this.content.style.top = this.header.clientHeight/2 - this.content.clientHeight/2 + 'px';
 			this.sticky('sticky', 'header');
