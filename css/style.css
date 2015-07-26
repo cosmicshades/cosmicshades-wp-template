@@ -141,7 +141,8 @@ hr.half-rule {
   z-index: 1000;
   box-shadow: 0 0px 0px rgba(128, 128, 128, 0);
   padding: 15px;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: -100%; }
   #sticky a {
     color: #727272;
     display: inline-block;
