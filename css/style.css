@@ -55,12 +55,14 @@ header {
     background-repeat: repeat-x repeat-y;
     background-position: center 0px; }
   header #bottom-header {
-    padding: 130px 0; }
+    min-height: 300px; }
     header #bottom-header img {
       width: 75px;
       height: 75px;
       position: absolute;
       top: -40px; }
+    header #bottom-header .contentfade {
+      position: relative; }
   header h1 {
     text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
     font-weight: 100;
@@ -127,7 +129,7 @@ hr.half-rule {
   margin: 15px auto; }
 
 .container {
-  max-width: 1024px;
+  max-width: 768px;
   width: 100%;
   margin: 0 auto; }
 
@@ -372,8 +374,10 @@ footer {
   color: white; }
 
 @media screen and (max-width: 768px) {
-  header #content h1 {
-    font-size: 3rem; }
+  header {
+    text-align: center; }
+    header h1 {
+      font-size: 3rem; }
   #team .pad-col:first-child {
     padding-right: 0px; }
   #team .pad-col:last-child {

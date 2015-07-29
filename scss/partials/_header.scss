@@ -17,20 +17,20 @@ header{
 		   	,url('../img/bg.jpg');
 		background-blend-mode: lighten;
 		background-repeat: repeat-x repeat-y;
-		// background-: #8859cf;
-		//background-size: 600% 600%;
 		background-position: center 0px;
-		// background-size: cover;
-
 	}
 	#bottom-header{
-		padding: 130px 0;
+		// padding: 130px 0;
 		// position: relative;
+		min-height: 300px;
 		img{
 			width: 75px;
 			height: 75px;
 			position: absolute;
 			top: -40px;
+		}
+		.contentfade{
+			position: relative;
 		}
 	}
 
