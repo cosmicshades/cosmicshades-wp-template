@@ -42,7 +42,7 @@
 		},
 		preloadAnim: function(){
 			var containerXOffset = $('.container').offset().left;
-			this.headerBottom.style.height = window.innerHeight;
+			this.headerBottom.style.height = '100vh';
 			this.headerTop.style.height = 0;
 			this.logo.style.top = window.innerHeight/2 - this.logo.clientHeight/2 + 'px';
 			this.logo.style.left = window.innerWidth/2 - this.logo.clientWidth/2 + 'px';
