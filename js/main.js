@@ -18,7 +18,7 @@
 		onScrollParallax: function(){
 			this.toTop = window.pageYOffset;
 			this.content.style.opacity = 1 - (this.toTop/header.clientHeight)*3;
-			this.headerTop.style.backgroundPosition = 'center ' + this.toTop/5 + 'px';
+			this.headerTop.style.backgroundPosition = 'center ' + this.toTop/3 + 'px';
 		},
 		parallax: function(header, content){
 			window.addEventListener('scroll', this.onScrollParallax.bind(this));
@@ -44,7 +44,7 @@
 			$('#bottom-header div.contentfade').css({
 				opacity:0,
 				top:'60px'
-			})
+			});
 			window.setTimeout(function(){
 				$('#bottom-header').animate({
 					height:'50vh'
@@ -54,8 +54,8 @@
 				},1000, 'easeInOutQuint');
 				if(window.innerWidth > 768){
 					$('#logo').animate({
-						left:containerXOffset+'px'
-					},1000,'easeInOutQuint');
+						left:containerXOffset + 20 +'px'
+					},1000,'easeInOutBack');
 				}
 				window.setTimeout(function(){
 					$('#bottom-header div.contentfade').each(function(i){

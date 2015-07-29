@@ -64,7 +64,32 @@ section{
 		justify-content: center;
 	}
 }
-
+.philosophy{
+	p{
+		margin-bottom: 20px;
+		font-size: 1rem;
+	}
+	h4{
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+	h5{
+		font-size: 1rem;
+		margin: 10px 0;
+	}
+	.pad-col{
+		padding: 20px
+	}
+	.left{
+		border-bottom: 4px solid rgba(133, 133, 133, 0.25);
+		width: 40px;
+		margin: 15px 0;
+	}
+	p.capabilities{
+		margin-bottom: 0px;
+		margin-left: 10px;
+	}
+}
 .section-header{
 	font-size: 2.125rem;
 	text-align: center;
@@ -121,6 +146,7 @@ section{
 			font-style: italic;
 		}
 		p.about-me{
+			font-size: 1rem;
 			line-height: 160%;
 			margin: 20px 0 0;
 		}
