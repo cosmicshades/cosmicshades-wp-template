@@ -8,7 +8,7 @@ header{
 	position: relative;
 	overflow: hidden;
 	#top-header{
-		height: 100vh;
+		height: 250px;
 		background: 
 			linear-gradient(
 			  rgba(76,49,115,0.5), 
@@ -24,8 +24,8 @@ header{
 
 	}
 	#bottom-header{
-		padding: 140px 0;
-		position: relative;
+		padding: 130px 0;
+		// position: relative;
 		img{
 			width: 75px;
 			height: 75px;

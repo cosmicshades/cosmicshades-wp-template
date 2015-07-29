@@ -48,15 +48,14 @@ header {
   position: relative;
   overflow: hidden; }
   header #top-header {
-    height: 100vh;
+    height: 250px;
     background: -webkit-linear-gradient(rgba(76, 49, 115, 0.5), rgba(76, 49, 115, 0.5)), url("../img/bg.jpg");
     background: linear-gradient(rgba(76, 49, 115, 0.5), rgba(76, 49, 115, 0.5)), url("../img/bg.jpg");
     background-blend-mode: lighten;
     background-repeat: repeat-x repeat-y;
     background-position: center 0px; }
   header #bottom-header {
-    padding: 140px 0;
-    position: relative; }
+    padding: 130px 0; }
     header #bottom-header img {
       width: 75px;
       height: 75px;
@@ -115,9 +114,6 @@ body {
   padding: 0;
   font-smoothing: antialiased;
   background-color: #EBEBEB; }
-
-#page-wrapper {
-  overflow: hidden; }
 
 .pure-g [class*="pure-u"] {
   /* Set your content font stack here: */
