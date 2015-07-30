@@ -276,13 +276,13 @@ section {
 
 .philosophy h5 {
   font-size: 1rem;
-  margin: 10px 0; }
+  margin: 25px 0 10px; }
 
 .philosophy .pad-col {
   padding: 20px; }
 
 .philosophy .left {
-  border-bottom: 4px solid rgba(133, 133, 133, 0.25);
+  border-bottom: 4px solid rgba(0, 150, 136, 0.55);
   width: 40px;
   margin: 15px 0; }
 
